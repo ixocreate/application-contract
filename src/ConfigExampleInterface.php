@@ -9,10 +9,15 @@ declare(strict_types=1);
 
 namespace Ixocreate\Contract\Application;
 
-interface ConfigProviderInterface
+interface ConfigExampleInterface
 {
     /**
-     * @return array
+     * @return string
      */
-    public function __invoke(): array;
+    public function configName(): string;
+
+    /**
+     * @return string
+     */
+    public function configContent(): string;
 }

@@ -15,4 +15,14 @@ interface ConfigProviderInterface
      * @return array
      */
     public function __invoke(): array;
+
+    /**
+     * @return string
+     */
+    public function configName(): string;
+
+    /**
+     * @return string
+     */
+    public function configContent(): string;
 }
